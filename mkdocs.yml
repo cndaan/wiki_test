@@ -1,0 +1,12 @@
+site_name: Publishing a github wiki as site
+site_url: https://wiki.daantoes.eu/
+theme:
+  name: readthedocs
+plugins:
+  search: {}
+markdown_extensions:
+  meta: {}
+  tables: {}
+  fenced_code: {}
+  toc:
+    permalink: True
