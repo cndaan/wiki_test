@@ -9,8 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Clone repository
-        run: >
+
+      - name: clone
+        run:  |
           git clone https://github.com/Arcadis/terraform-azure-governance.wiki.git
           cd terraform-azure-governance.wiki
           git remote remove origin
