@@ -1,0 +1,21 @@
+name: Clone and push
+
+on: 
+  gollum
+    
+jobs:
+  clone:
+    name: Clone
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 
+          
+    - name: Clone repository
+      run: >
+        git clone https://github.com/Arcadis/terraform-azure-governance.wiki.git
+        cd terraform-azure-governance.wiki
+        git remote remove origin
+        git remote add origin https://github.com/cndaan/wiki_test.wiki.git 
+        git push --set-upstream origin master --force
