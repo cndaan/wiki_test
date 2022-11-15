@@ -1,7 +1,7 @@
 name: Clone and push
 
-on: 
-  gollum
+# on: 
+#   gollum
     
 jobs:
   clone:
